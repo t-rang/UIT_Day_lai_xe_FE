@@ -146,6 +146,11 @@ li {
     padding: 10px 20px;
     margin: 20px 00px;
 }
+#course-title {
+    padding-top: 50px;
+    font-size: 20px;
+    color: #27AE60;
+}
 /* Instructors */
 #instructors-header {
     width: 100%; 
@@ -244,11 +249,11 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #27AE60;
 }
-::placeholder {
+/* ::placeholder {
     color: black;
     font-family: Verdana;
     font-size: 11px;
-}
+} */
 option[value=""][disabled] {
     display: none;
 }
