@@ -15,17 +15,17 @@
     <!-- Test -->
     <div class="header">
         <ul>
-            <li><a href="#">Trang chủ</a></li>
-            <li><a href="#">Khoá học</a></li>
-            <li><a href="#">Giảng viên</a></li>
-            <li><a href="#">Cảm nhận</a></li>
-            <li><a href="#">Đăng ký</a></li>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="#courses">Khoá học</a></li>
+            <li><a href="#instructors">Giảng viên</a></li>
+            <li><a href="#testimony">Cảm nhận</a></li>
+            <li><a href="#signup">Đăng ký</a></li>
           </ul>
     </div>
 
     <div class="hero">
         <img src="image/hero-image.jpg" height="811px" width="100%"/>
-        <div id="hero-text"><h3>Học lái ô tô chất lượng, an toàn, dễ dàng</h3></div>
+        <div id="hero-text"><h3>Học lái ô tô chất lượng <br> an toàn, dễ dàng</h3></div>
         
     </div>
 
@@ -48,41 +48,41 @@
         </div>
     </div>
 
-    <div class="row courses">
+    <div id="courses" class="row courses">
         <div class="column courses" id="courses-all">
             <p class="text-header-1">Chọn khoá học <br><b>cho riêng mình</b></p>
             <p class="text-header-2">Chúng tôi cung cấp nhiều lớp học lái để đáp ứng mọi nhu cầu của bạn</p>
             <ul>
                 <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
+                    <img src="image/course-car-b1.1.png"/>
                     <p>Bằng B1.1</p>
                 </div></li>
                 <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
+                    <img src="image/course-car-b2.png"/>
                     <p>Bằng B2</p>
                 </div></li>
                 <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
+                    <img src="image/course-car-c.png"/>
                     <p>Bằng C</p>
                 </div></li>
             </ul>
             <ul>
                 <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
+                    <img src="image/course-car-d.png"/>
+                    <p>Bằng D</p>
+                </div></li>
+                <li><div>
+                    <img src="image/course-car-e.png"/>
                     <p>Bằng E</p>
                 </div></li>
                 <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
+                    <img src="image/course-car-f.png"/>
                     <p>Bằng F</p>
-                </div></li>
-                <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
-                    <p>Bằng CE</p>
                 </div></li>
             </ul>
         </div>
         <div class="column courses" id="courses-preview">
-            <img src="image/course-image-b1.1.jpeg"/>
+            <img src="image/course-car-b1.1.png"/>
             <p id ="course-title"><b>Bằng B1.1</b></p>
             <p style="padding-top: 20px">Bằng B1 cấp cho những người không hành nghề lái xe. 
                 Người có giấy phép lái xe hạng B1.1 không được điều 
@@ -91,7 +91,7 @@
         </div>
     </div>
 
-    <div class="row instructors">
+    <div id="instructors" class="row instructors">
         <div id="instructors-header">
             <p class="text-header-1" >Đồng hành là <br>
             <span style="color: #27AE60"><b>giảng viên tâm huyết</b></span></p>
@@ -114,7 +114,7 @@
         </div>
     </div>
 
-    <div class="testimony">
+    <div id="testimony" class="testimony">
         <div>
             <p class="text-header-1">Hàng trăm học viên <span style="color: #27AE60"><b>lấy bằng thành công</b></span></p>
             <p class="text-header-2">Trung tâm trang bị cho học viên hiểu biết và kỹ năng để thi đậu và lái xe tự tin trên mọi nẻo đường.</p>
@@ -140,7 +140,7 @@
         </div>
     </div>
 
-    <div class="signup">
+    <div id="signup" class="signup">
         <div id="signup-header">
             <p class="text-header-1">Đăng ký để nhận <b>tư vấn và ưu đãi</b></p>
             <p class="text-header-2">Hãy cho chúng tôi biết nguyện vọng học lái của bạn và chúng tôi sẽ đưa ra giải pháp.</p>
@@ -165,5 +165,9 @@
     </div>   
 
     <div class="footer">Footer</div>
+
+    <script>
+        showSlides();
+    </script>
 </body>
 </html>
