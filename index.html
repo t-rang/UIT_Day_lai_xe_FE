@@ -8,11 +8,9 @@
     <title>Tran Huyen Trang - Do an</title>
     <link href="css/css.css" rel="stylesheet" type="text/css"/>
     <script src="script/script.js" type="text/javascript"></script>
-    <link href>
 </head>
 
 <body>
-    <!-- Test -->
     <div class="header">
         <ul>
             <li><a href="/">Trang chủ</a></li>
@@ -53,43 +51,46 @@
             <p class="text-header-1">Chọn khoá học <br><b>cho riêng mình</b></p>
             <p class="text-header-2">Chúng tôi cung cấp nhiều lớp học lái để đáp ứng mọi nhu cầu của bạn</p>
             <ul>
-                <li><div>
+                <li><div class="course-window" onclick="showCoursePreview(0)">
                     <img src="image/course-car-b1.1.png"/>
-                    <p>Bằng B1.1</p>
+                    <p class="course-title">Bằng B1</p>
                 </div></li>
-                <li><div>
+                <li><div class="course-window" onclick="showCoursePreview(1)">
                     <img src="image/course-car-b2.png"/>
                     <p>Bằng B2</p>
                 </div></li>
-                <li><div>
+                <li><div class="course-window" onclick="showCoursePreview(2)">
                     <img src="image/course-car-c.png"/>
                     <p>Bằng C</p>
                 </div></li>
             </ul>
             <ul>
-                <li><div>
+                <li><div class="course-window" onclick="showCoursePreview(3)">
                     <img src="image/course-car-d.png"/>
                     <p>Bằng D</p>
                 </div></li>
-                <li><div>
+                <li><div class="course-window" onclick="showCoursePreview(4)">
                     <img src="image/course-car-e.png"/>
                     <p>Bằng E</p>
                 </div></li>
-                <li><div>
+                <li><div class="course-window" onclick="showCoursePreview(5)">
                     <img src="image/course-car-f.png"/>
                     <p>Bằng F</p>
                 </div></li>
             </ul>
         </div>
         <div class="column courses" id="courses-preview">
-            <img src="image/course-car-b1.1.png"/>
-            <p id ="course-title"><b>Bằng B1.1</b></p>
-            <p style="padding-top: 20px">Bằng B1 cấp cho những người không hành nghề lái xe. 
-                Người có giấy phép lái xe hạng B1.1 không được điều 
-                khiển xe ô tô số sàn.</p>
+            <img id="course-image" src="image/course-car-b1.1.png"/>
+            <p id ="course-title">Bằng B1</p>
+            <p id ="course-desc" style="padding-top: 20px">
+                Bằng lái xe hạng B1 là loại số tự động cấp cho người không hành nghề lái 
+                xe để điều khiển ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi 
+                cho người lái xe, ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng 
+                tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật.
+            </p>
             <input type="button" value="Chi tiết">
         </div>
-    </div>
+    </div> 
 
     <div id="instructors" class="row instructors">
         <div id="instructors-header">

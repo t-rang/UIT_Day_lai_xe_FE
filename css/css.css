@@ -1,256 +1,240 @@
-/* Archive - Layout
-.header {
-    background-color: #ffffff; 
-}
-.hero {
-    background-color: #27AE60;
-}
-#benefit1 {
-    background-color: #F4F3F3;
-}
-#benefit2 {
-    background-color: #f4f3f381;
-}
-#benefit3 {
-    background-color: #f4f3f305;
-} 
-#instructor1 {
-    background-color: #F4F3F3;
-}
-#instructor2 {
-    background-color: #f4f3f381;
-}
-*/
-
 /* Global  */
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 body {
-    height: 100%;
-    font-family: Helvetica, sans-serif, arial;
+  height: 100%;
+  font-family: Helvetica, sans-serif, arial;
 }
 ul {
-    list-style-type: none;
-    overflow: hidden;
+  list-style-type: none;
+  overflow: hidden;
 }
 li {
-    float: left;
+  float: left;
 }
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 .column {
-    float: left;
-    width: 50%;
-    padding: 20px;
+  float: left;
+  width: 50%;
+  padding: 20px;
 }
 .text-header-1 {
-    padding: 20px 0px;
-    font-size: 40px;
+  padding: 20px 0px;
+  font-size: 40px;
 }
 .text-header-2 {
-    padding: 20px 0px;
-    font-size: 20px;
+  padding: 20px 0px;
+  font-size: 20px;
 }
 /* Header  */
 .header {
-    padding: 20px;
+  padding: 20px;
 }
 .header li a {
-    float: left;
-    color: #27AE60;
-    text-align: center;
-    padding: 10px 10px;
-    border-radius: 10px;
-    text-decoration: none;
+  float: left;
+  color: #27ae60;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 .header li a:hover {
-    background-color: #27AE60;
-    color: #ffffff;
+  background-color: #27ae60;
+  color: #ffffff;
 }
 /* Hero  */
 #hero-text {
-    position: absolute;
-    top: 400px;
-    left: 100px;
-    font-size: 40px;
-    width: 50%;
-    color: #27AE60;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+  font-size: 40px;
+  width: 50%;
+  color: #27ae60;
 }
 /* Benefit */
 #benefit-header {
-    text-align:center; 
-    font-size: 30px;
-    padding-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  padding-top: 20px;
 }
 .benefit.column {
-    float: left;
-    width: 33.33%;
-    padding: 40px;
-    text-align: center;
-    background-color: #fffdfd;
+  float: left;
+  width: 33.33%;
+  padding: 40px;
+  text-align: center;
+  background-color: #fffdfd;
 }
 .benefit.column img {
-    height: 75px;
-    width: 75px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 75px;
+  width: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .benefit-para {
-    line-height: 40px;
-    font-size: 20px;
+  line-height: 40px;
+  font-size: 20px;
 }
 /* Courses */
 .courses.column {
-    height: 600px;
+  height: 600px;
 }
 #courses-all {
-    color: #ffffff;
-    background-color:#27AE60;
+  color: #ffffff;
+  background-color: #27ae60;
 }
-#courses-all li{
-    display: inline;
-    padding: 10px;
+#courses-all li {
+  display: inline;
+  padding: 10px;
 }
-#courses-all li img{
-    height: 80px;
-    width: 150px;
+#courses-all li img {
+  height: 80px;
+  width: 150px;
 }
 #courses-all li p {
-    font-size: 18px;
-    padding: 10px 0px;
+  font-size: 18px;
+  padding: 10px 0px;
 }
 #courses-preview {
-    color: #000000;
-    background-color:#ffffff;
+  color: #000000;
+  background-color: #f4f3f3;
 }
 #courses-preview img {
-    height: 300px; 
-    width: 500px; 
-    object-fit: cover; 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 300px;
+  width: 500px;
+  object-fit: contain;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 #courses-preview input {
-    float: left;
-    background-color: #27AE60;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 20px;
-    margin: 20px 00px;
+  float: left;
+  background-color: #27ae60;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 20px 00px;
 }
 #course-title {
-    padding-top: 50px;
-    font-size: 20px;
-    color: #27AE60;
+  font-weight: bold;
+  padding-top: 50px;
+  font-size: 20px;
+  color: #27ae60;
+}
+.course-window:hover p {
+  font-weight: bold;
+  text-decoration: underline;
 }
 /* Instructors */
 #instructors-header {
-    width: 100%; 
-    text-align:right; 
-    padding-right: 20px;
-} 
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+}
 .instructors.column {
-    width: 50%;
-    text-align: center;
-    background-color: #F4F3F3
+  width: 50%;
+  text-align: center;
+  background-color: #f4f3f3;
 }
 .instructors.column div {
-    display: inline-block; 
-    margin: 0 auto; 
-    width: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  width: 50%;
 }
 .instructors.column img {
-    width: 60%; 
-    height: 50%;
+  width: 60%;
+  height: 50%;
 }
 .instructor-name {
-    font-size: 18px; 
-    padding: 10px 0px;
+  font-size: 18px;
+  padding: 10px 0px;
 }
 .instructor-desc {
-    text-align: left;
+  text-align: left;
 }
 /* Testimony */
 .testimony {
-    background-color: #ffffff;
-    padding: 20px;
+  background-color: #ffffff;
+  padding: 20px;
 }
 .testimony-slideshow {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 .testimony-slide img {
-    width: 50%; 
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    object-fit: cover;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
 }
 .testimony-slide {
-    display: none;
+  display: none;
 }
 .testimony-dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 .active /*, .testimony-dot:hover*/ {
-    background-color: #717171;
+  background-color: #717171;
 }
 /* Signup */
 .signup {
-    background-color: #27AE60; 
-    padding: 20px 0px 40px 0px;
+  background-color: #27ae60;
+  padding: 20px 0px 40px 0px;
 }
 #signup-header {
-    width: 100%; 
-    text-align:center; 
-    padding-right: 20px;
-    color: #ffffff
-} 
+  width: 100%;
+  text-align: center;
+  padding-right: 20px;
+  color: #ffffff;
+}
 .signup.container {
-    border-radius: 5px;
-    background-color: #fffdfd;
-    padding: 20px;
-    width: 50%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+  border-radius: 5px;
+  background-color: #fffdfd;
+  padding: 20px;
+  width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
-input[type=text], input[type=number], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
-input[type=submit] {
-    background-color: #27AE60;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
-input[type=submit]:hover {
-    background-color: #27AE60;
+input[type="submit"]:hover {
+  background-color: #27ae60;
 }
 /* ::placeholder {
     color: black;
@@ -258,10 +242,10 @@ input[type=submit]:hover {
     font-size: 11px;
 } */
 option[value=""][disabled] {
-    display: none;
+  display: none;
 }
 /* Footer */
 .footer {
-    background-color: #F4F3F3;
-    padding: 20px;
+  background-color: #f4f3f3;
+  padding: 20px;
 }
