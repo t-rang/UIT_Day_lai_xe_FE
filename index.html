@@ -12,6 +12,7 @@
 </head>
 
 <body onload="showSlides()">
+
     <div id="navbar">
         <ul>
             <li><a href="/">Trang chủ</a></li>
@@ -23,13 +24,14 @@
     </div>
 
     <div id="hero">
-        <!-- Video https://vod-progressive.akamaized.net/exp=1619025725~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2117%2F18%2F460585608%2F2037659844.mp4~hmac=5c45fa9d31ab926830fa86470a9a57c55120ed3b2ff495c2e96cd5f3227fa97e/vimeo-prod-skyfire-std-us/01/2117/18/460585608/2037659844.mp4?filename=pexels-yaroslav-shuraev-5418130.mp4
-        Tutorial https://www.solodev.com/blog/web-design/bootstrap/how-to-create-a-hero-with-a-video-background.stml -->
-        <img src="image/hero-image.gif" height="811px" width="100%" />
+        <video autoplay="" id="heroVideo" loop="" muted="" poster="image/hero-image.gif">
+            <source src="image/hero-video.mp4" type="video/mp4" />
+        </video>
         <div id="hero-text">
-            <h3>Học lái ô tô chất lượng <br> an toàn, dễ dàng</h3>
+            <h3>Học lái ô tô chất lượng, <br> an toàn, dễ dàng</h3>
         </div>
     </div>
+
 
     <div class="row benefit">
         <div id="benefit-header">Trải nghiệm cho học viên</div>
