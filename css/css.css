@@ -6,7 +6,8 @@
 }
 body {
   height: 100%;
-  font-family: Helvetica, sans-serif, arial;
+  font-family: roboto, helvetica;
+  line-height: 25px;
 }
 ul {
   list-style-type: none;
@@ -28,6 +29,7 @@ li {
 .text-header-1 {
   padding: 20px 0px;
   font-size: 40px;
+  line-height: 50px;
 }
 .text-header-2 {
   padding: 20px 0px;
@@ -41,7 +43,7 @@ li {
   border-radius: 4px;
   cursor: pointer;
 }
-/* Navbar */
+/* Global - Navbar */
 #navbar {
   padding: 16px;
   position: fixed;
@@ -60,7 +62,16 @@ li {
 #navbar li a:hover {
   font-weight: bold;
 }
-/* Hero  */
+/* Global - Footer */
+#footer {
+  background-color: #f4f3f3;
+  padding: 20px;
+  color: #27ae60;
+  text-align: center;
+  font-size: 13px;
+  line-height: 25px;
+}
+/* Index - Hero  */
 #heroVideo {
   height: 50%;
   width: 100%;
@@ -70,10 +81,16 @@ li {
   top: 300px;
   left: 80px;
   font-size: 50px;
+  line-height: 60px;
   width: 60%;
   color: #27ae60;
 }
-/* Benefit */
+/* Index - Content */
+#content {
+  width: 100%;
+  padding-top: 60px;
+}
+/* Index - Benefit */
 #benefit-header {
   text-align: center;
   font-size: 30px;
@@ -97,7 +114,7 @@ li {
   line-height: 40px;
   font-size: 20px;
 }
-/* Courses */
+/* Index - Courses */
 .courses.column {
   height: 600px;
 }
@@ -139,7 +156,7 @@ li {
   font-weight: bold;
   text-decoration: underline;
 }
-/* Instructors */
+/* Index - Instructors */
 #instructors-header {
   width: 100%;
   text-align: right;
@@ -166,7 +183,7 @@ li {
 .instructor-desc {
   text-align: left;
 }
-/* Testimony */
+/* Index - Testimony */
 .testimony {
   background-color: #ffffff;
   padding: 20px;
@@ -199,7 +216,7 @@ li {
 .active /*, .testimony-dot:hover*/ {
   background-color: #717171;
 }
-/* Signup */
+/* Index - Signup */
 #signup {
   background-color: #27ae60;
   padding: 20px 0px 40px 0px;
@@ -235,12 +252,27 @@ textarea {
 option[value=""][disabled] {
   display: none;
 }
-/* Footer */
-#footer {
-  background-color: #f4f3f3;
-  padding: 20px;
-  color: #27ae60;
-  text-align: center;
-  font-size: 13px;
-  line-height: 25px;
+/* Course details */
+.course-details.column {
+  width: 70%;
+  height: 1300px;
+  padding: 30px;
+  background-color: #fffdfd;
+}
+.course-details p {
+  text-align: justify;
+}
+.course-snippet.column {
+  width: 30%;
+  height: 1300px;
+  padding: 80px 30px;
+}
+.course-snippet td {
+  padding: 12px;
+  background-color: #27ae60;
+  color: #ffffff;
+}
+.course-snippet img {
+  height: 30px;
+  width: 30px;
 }
