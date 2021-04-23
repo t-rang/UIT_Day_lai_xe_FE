@@ -43,18 +43,23 @@ function showCoursePreview(i) {
     document.getElementById("course-image").src = courses[i].img;
     document.getElementById("course-desc").innerHTML = courses[i].desc;
 }
-// WIP
 // Course details - Adjust content 
-function adjustCourseDetail() {
+function goToCourseDetail() {
     var title = document.getElementById("course-title").innerHTML;
     for (i = 0; i < courses.length; i++) {
         if (title == courses[i].title) {
-            location.replace("course.html");
-            document.getElementById("course-details-img").src = courses[i].img;
-            document.getElementById("course-details-title").innerHTML = courses[i].title;
-            document.getElementById("course-details-desc").innerHTML = courses[i].desc;
+            location.replace(`course.html?id=${i}`);
         }
     }
+}
+function updateCourseDetail(i) {
+    document.getElementById("course-details-img").src = courses[i].img;
+    document.getElementById("course-details-title").innerHTML = courses[i].title;
+    document.getElementById("course-details-desc").innerHTML = courses[i].desc;
+}
+function getCourseDetail() {
+    var j = window.location.href.split("").pop();
+    updateCourseDetail(j);
 }
 
 // Index - Testimony - Show testimony slideshow
@@ -79,21 +84,35 @@ function showSlides() {
 }
 
 // Index - Signup - Validate form
-function addResult(n) {
-    var result = document.createElement("textarea");
-    var resultText = document.createTextNode(n);
-    result.appendChild(resultText);
-    document.getElementById("form").appendChild(result);
-}
 function validateForm() {
-    var x = document.forms["signUp"]["name"].value;
-    var y = document.forms["signUp"]["phone"].value;
-    var z = document.forms["signUp"]["license"].value;
-    if (x == "" || y == "" || z == "") {
-        addResult("Vui lòng điền các trường bắt buộc (*).");
-    }
-    else {
-        addResult("Chúng tôi đã nhận được đăng ký của bạn!");
-    }
-}
+    var name, phone, license;
+    var nameResult = "";
+    var phoneResult = "";
+    var licenseResult = "";
+    var formResult = "";
 
+    name = document.getElementById("name").value;
+    phone = document.getElementById("phone").value;
+    license = document.getElementById("license").value;
+
+    if (name == "") {
+        nameResult = "Thông tin không được bỏ trống.";
+    }
+    if (phone == "") {
+        phoneResult = "Thông tin không được bỏ trống.";
+    }
+    if (license == "") {
+        licenseResult = "Thông tin không được bỏ trống.";
+    }
+    if (name != "" && phone != "" && license != "") {
+        formResult = "Chúng tôi đã nhận được đăng ký của bạn.";
+    }
+    document.getElementById("nameResult").innerHTML = nameResult;
+    document.getElementById("phoneResult").innerHTML = phoneResult;
+    document.getElementById("licenseResult").innerHTML = licenseResult;
+    document.getElementById("formResult").innerHTML = formResult;
+}
+// </script>
+
+// </body>
+// </html> 
