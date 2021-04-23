@@ -8,23 +8,23 @@
     <title>Tran Huyen Trang - Do an</title>
     <link href="css/css.css" rel="stylesheet" type="text/css" />
     <script src="script/script.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 </head>
 
 <body>
 
     <div id="navbar">
         <ul>
-            <li><a href="/">Trang chủ</a></li>
+            <li><a href="index.html#courses"> &larr; Quay lại</a></li>
         </ul>
     </div>
 
     <div id="content">
         <div class="row">
             <div class="column course-details">
-                <img src="image/course-car-b1.1.png" style="object-fit: contain; height: 400px" />
-                <p class="text-header-1" style="color: #27ae60"><b>Bằng B1.1</b></p>
-                <p>Bằng lái xe hạng B1 là loại số tự động cấp cho người không hành
+                <img id="course-details-img" src="image/course-car-b1.1.png" />
+                <p class="text-header-1" style="color: #27ae60" id="course-details-title"><b>Bằng B1</b></p>
+                <p id="course-details-desc">Bằng lái xe hạng B1 là loại số tự động cấp cho người không hành
                     nghề lái xe để điều khiển ô tô số tự động chở người đến 9 chỗ
                     ngồi, kể cả chỗ ngồi cho người lái xe, ô tô tải, kể cả ô tô tải
                     chuyên dùng số tự động có trọng tải thiết kế dưới 3.500 kg; ô tô
@@ -68,7 +68,6 @@
             </div>
 
             <div class="column course-snippet">
-                <!-- <p class="text-header-2"><b>Tổng quan khoá học</b></p> -->
                 <table width="100%" style="border-collapse: collapse">
                     <tr>
                         <td colspan="3" align="left" class="text-header-2"><b>Tổng quan khoá học</b></td>

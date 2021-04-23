@@ -116,7 +116,7 @@ li {
 }
 /* Index - Courses */
 .courses.column {
-  height: 600px;
+  height: 650px;
 }
 #courses-all {
   color: #ffffff;
@@ -262,6 +262,10 @@ option[value=""][disabled] {
 .course-details p {
   text-align: justify;
 }
+.course-details img {
+  object-fit: contain;
+  height: 400px;
+}
 .course-snippet.column {
   width: 30%;
   height: 1300px;
@@ -269,10 +273,14 @@ option[value=""][disabled] {
 }
 .course-snippet td {
   padding: 12px;
-  background-color: #27ae60;
-  color: #ffffff;
+  background-color: #dbdbdb;
+  color: #27ae60;
 }
 .course-snippet img {
   height: 30px;
   width: 30px;
+}
+.course-snippet table {
+  position: sticky;
+  top: 100px;
 }
