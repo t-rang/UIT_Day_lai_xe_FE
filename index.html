@@ -6,164 +6,214 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tran Huyen Trang - Do an</title>
-    <link href="css/css.css" rel="stylesheet" type="text/css"/>
+    <link href="css/css.css" rel="stylesheet" type="text/css" />
     <script src="script/script.js" type="text/javascript"></script>
-    <link href>
 </head>
 
-<body>
-    <div class="header">
+<body onload="showSlides()">
+
+    <div id="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Courses</a></li>
-            <li><a href="#">Instructor</a></li>
-            <li><a href="#">Testimony</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+            <li><a href="/">Trang chủ</a></li>
+            <li><a href="#courses">Khoá học</a></li>
+            <li><a href="#instructors">Giảng viên</a></li>
+            <li><a href="#testimony">Cảm nhận</a></li>
+            <li><a href="#signup">Đăng ký</a></li>
+        </ul>
     </div>
 
-    <div class="hero">
-        <img src="image/hero-image.jpg" height="811px" width="100%"/>
-        <div id="hero-text"><h3>Lorem ipsum dolor sit amet, consectetur.</h3></div>
-    </div>
-
-    <div class="row benefit">
-        <div id="benefit-header">Trải nghiệm cho học viên</div>
-        <div class="column benefit" id="benefit1">
-            <img src="image/icon-chat.png"/>
-            <p class="benefit-para"><b>Tư vấn</b></p>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit </p>
-        </div>
-        <div class="column benefit" id="benefit2">
-            <img src="image/icon-car.png"/>
-            <p class="benefit-para"><b>Học lái</b></p>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit</p>
-        </div>
-        <div class="column benefit" id="benefit3">
-            <img src="image/icon-license.png"/>
-            <p class="benefit-para"><b>Lấy bằng</b></p>
-            <p>Nemo enim ipsam voluptatem quia voluptas sit</p>
-        </div>
-    </div>
-
-    <div class="row courses">
-        <div class="column courses" id="courses-all">
-            <p class="text-header-1">Chọn khoá học <br><b>cho riêng mình</b></p>
-            <p class="text-header-2">Lorem ipsum dolor sit amet, consectetur 
-                adipiscing elit sed do eiusmod</p>
-            <ul>
-                <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
-                    <p>Course 1</p>
-                </div></li>
-                <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
-                    <p>Course 1</p>
-                </div></li>
-                <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
-                    <p>Course 1</p>
-                </div></li>
-            </ul>
-            <ul>
-                <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
-                    <p>Course 1</p>
-                </div></li>
-                <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
-                    <p>Course 1</p>
-                </div></li>
-                <li><div>
-                    <img src="image/course-image-b1.1.jpeg"/>
-                    <p>Course 1</p>
-                </div></li>
-            </ul>
-        </div>
-        <div class="column courses" id="courses-preview">
-            <img src="image/course-image-b1.1.jpeg"/>
-            <p style="padding-top: 50px">Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                 aut odit aut fugit, sed quia consequuntur magni dolores 
-                 eos qui ratione voluptatem sequi nesciunt. </p>
-            <input type="button" value="Chi tiết">
-        </div>
-    </div>
-
-    <div class="row instructors">
-        <div id="instructors-header">
-            <p class="text-header-1" >Đồng hành là <br>
-            <span style="color: #27AE60"><b>giảng viên tâm huyết</b></span></p>
-            <p class="text-header-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod</p>
-        </div>
-        <div class="column instructors" id="instructor1">
-            <div>     
-                <img src="image/image - instructor 1.jpg"/>           
-                <p class="instructor-name"><b>Giảng Viên Trần Hữu Trung</b></p>
-                <p class="instructor-desc">Nemo enim ipsam voluptatem quia voluptas 
-                    sit aspernatur aut odit aut fugit, sed quia</p>
+    <div id="content">
+        <div id="hero">
+            <video autoplay="" id="heroVideo" loop="" muted="" poster="image/hero-image.gif">
+                <source src="image/hero-video.mp4" type="video/mp4" />
+            </video>
+            <div id="hero-text">
+                <h3>Học lái ô tô chất lượng, <br> an toàn, dễ dàng</h3>
             </div>
         </div>
-        <div class="column instructors" id="instructor2">
-            <div>     
-                <img src="image/image - instructor 2.jpg"/>           
-                <p class="instructor-name"><b>Giảng Viên Trần Hữu Trung</b></p>
-                <p class="instructor-desc">Nemo enim ipsam voluptatem quia voluptas 
-                    sit aspernatur aut odit aut fugit, sed quia</p>
+
+        <div class="row benefit">
+            <div id="benefit-header">Trải nghiệm cho học viên</div>
+            <div class="column benefit" id="benefit1">
+                <img src="image/icon-chat.png" />
+                <p class="benefit-para"><b>Tư vấn</b></p>
+                <p>Nhận tư vấn về khoá học & lịch học phù hợp</p>
+            </div>
+            <div class="column benefit" id="benefit2">
+                <img src="image/icon-car.png" />
+                <p class="benefit-para"><b>Học lái</b></p>
+                <p>Học lái ô tô với giảng viên giàu kinh nghiệm</p>
+            </div>
+            <div class="column benefit" id="benefit3">
+                <img src="image/icon-license.png" />
+                <p class="benefit-para"><b>Lấy bằng</b></p>
+                <p>Lấy bằng ngay trong lần thi đầu tiên</p>
             </div>
         </div>
+
+        <div id="courses" class="row courses">
+            <div class="column courses" id="courses-all">
+                <p class="text-header-1">Chọn khoá học <br><b>cho riêng mình</b></p>
+                <p class="text-header-2">Chúng tôi cung cấp nhiều lớp học lái để đáp ứng mọi nhu cầu của bạn</p>
+                <ul>
+                    <li>
+                        <div class="course-window" onclick="showCoursePreview(0)">
+                            <img src="image/course-car-b1.1.png" />
+                            <p class="course-title">Bằng B1</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-window" onclick="showCoursePreview(1)">
+                            <img src="image/course-car-b2.png" />
+                            <p>Bằng B2</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-window" onclick="showCoursePreview(2)">
+                            <img src="image/course-car-c.png" />
+                            <p>Bằng C</p>
+                        </div>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <div class="course-window" onclick="showCoursePreview(3)">
+                            <img src="image/course-car-d.png" />
+                            <p>Bằng D</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-window" onclick="showCoursePreview(4)">
+                            <img src="image/course-car-e.png" />
+                            <p>Bằng E</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="course-window" onclick="showCoursePreview(5)">
+                            <img src="image/course-car-f.png" />
+                            <p>Bằng F</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="column courses" id="courses-preview">
+                <img id="course-image" src="image/course-car-b1.1.png" />
+                <p id="course-title">Bằng B1</p>
+                <p id="course-desc" style="padding-top: 20px">
+                    Bằng lái xe hạng B1 là loại số tự động cấp cho người không hành nghề lái
+                    xe để điều khiển ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi
+                    cho người lái xe, ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng
+                    tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật.
+                </p>
+                </span>
+                <br>
+                <!-- <button class="button" onclick="document.location='course.html'">Chi tiết</button> -->
+                <button class="button" onclick="goToCourseDetail()">Chi tiết</button>
+            </div>
+        </div>
+
+        <div id="instructors" class="row instructors">
+            <div id="instructors-header">
+                <p class="text-header-1">Đồng hành là <br>
+                    <span style="color: #27AE60"><b>giảng viên tâm huyết</b></span>
+                </p>
+                <p class="text-header-2">Giảng viên giàu kinh nghiệm cho bạn hiểu biết và sự tự tin khi điều khiển xe
+                </p>
+            </div>
+            <div class="column instructors" id="instructor1">
+                <div>
+                    <img src="image/image - instructor 1.jpg" />
+                    <p class="instructor-name"><b>Giảng Viên Đào Trần Thanh Liễu</b></p>
+                    <p class="instructor-desc">Cô Liễu hiểu tâm lý học viên và có phương pháp giảng dạy phù hợp, đặc
+                        biệt
+                        với học viên nữ.</p>
+                </div>
+            </div>
+            <div class="column instructors" id="instructor2">
+                <div>
+                    <img src="image/image - instructor 2.jpg" />
+                    <p class="instructor-name"><b>Giảng Viên Trần Hữu Trung</b></p>
+                    <p class="instructor-desc">Thầy Trung có nhiều kinh nghiệm
+                        với các bài thi sa hình giúp học viên chuẩn bị tốt trước khi thi.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="testimony" class="testimony">
+            <div>
+                <p class="text-header-1">Hàng trăm học viên <span style="color: #27AE60"><b>lấy bằng thành
+                            công</b></span>
+                </p>
+                <p class="text-header-2">Trung tâm trang bị cho học viên hiểu biết và kỹ năng để thi đậu và lái xe tự
+                    tin
+                    trên mọi nẻo đường.</p>
+            </div>
+            <div class="testimony-slideshow">
+                <div class="testimony-slide">
+                    <img src="image/image-testimony-1.jpg">
+                </div>
+
+                <div class="testimony-slide">
+                    <img src="image/image-testimony-2.jpg">
+                </div>
+
+                <div class="testimony-slide">
+                    <img src="image/image-testimony-3.jpg">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="testimony-dot" onclick="currentSlide(1)"></span>
+                <span class="testimony-dot" onclick="currentSlide(2)"></span>
+                <span class="testimony-dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+
+        <div id="signup">
+            <div id="signup-header">
+                <p class="text-header-1">Đăng ký để nhận <b>tư vấn và ưu đãi</b></p>
+                <p class="text-header-2">Hãy cho chúng tôi biết nguyện vọng học lái của bạn và chúng tôi sẽ đưa ra giải
+                    pháp.</p>
+            </div>
+            <div class="signup container">
+                <form name="signUp" id="form">
+                    <label>Họ tên *</label>
+                    <input type="text" id="name">
+                    <p class="field-validation" id="nameResult"></p>
+
+                    <label>Số điện thoại *</label>
+                    <input type="number" id="phone">
+                    <p class="field-validation" id="phoneResult"></p>
+
+                    <label>Bạn muốn lấy bằng gì? *</label>
+                    <select id="license">
+                        <option value="" selected disabled></option>
+                        <option value="B1">B1</option>
+                        <option value="B2">B2</option>
+                        <option value="C">C</option>
+                        <option value="C">D</option>
+                        <option value="C">E</option>
+                        <option value="C">F</option>
+                        <option value="Other">Tôi chưa quyết định.</option>
+                    </select>
+
+                    <p class="field-validation" id="licenseResult"></p>
+                    <label>Bạn muốn được tư vấn về chủ đề gì?</label>
+                    <textarea id="question" style="height:100px"></textarea>
+
+                    <button type="button" class="button" onclick="validateForm()">Đăng ký</button>
+                    <p class="form-validation" id="formResult"></p>
+                </form>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p>© Bản quyền của Trung tâm dạy lái xe 2021</p>
+            <p>trungtamdaylai@gmail.com</p>
+            <p>+84 999 999 999</p>
+        </div>
+
     </div>
-
-    <div class="testimony">
-        <div>
-            <p class="text-header-1">Hàng trăm học viên <span style="color: #27AE60"><b>lấy bằng thành công</b></span></p>
-            <p class="text-header-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </div>
-        <div class="testimony-slideshow">
-            <div class="testimony-slide">
-                  <img src="image/image-testimony-1.jpg">
-            </div>
-        
-            <div class="testimony-slide">
-                  <img src="image/image-testimony-2.jpg">
-            </div>
-        
-            <div class="testimony-slide">
-                  <img src="image/image-testimony-3.jpg">
-            </div>
-        </div>
-        <br>        
-        <div style="text-align:center">
-             <span class="testimony-dot" onclick="currentSlide(1)"></span> 
-             <span class="testimony-dot" onclick="currentSlide(2)"></span> 
-             <span class="testimony-dot" onclick="currentSlide(3)"></span> 
-        </div>
-    </div>
-
-    <div class="signup">
-        <div id="signup-header">
-            <p class="text-header-1">Đăng ký để nhận <b>tư vấn miễn phí</b></p>
-            <p class="text-header-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</p>
-        </div>
-        <div class="signup container">
-            <form>
-                <input type="text" id="name" name="name" placeholder="Họ tên">
-                <input type="number" id="phone" name="phone" placeholder="Số điện thoại">
-                <select id="license" name="license">
-                    <option value="" disabled selected>Bạn muốn lấy bằng gì?</option>
-                    <option value="B1.1">B1.1</option>
-                    <option value="B2">B2</option>
-                    <option value="C">C</option>
-                    <option value="Other">Tôi chưa quyết định.</option>
-                </select>
-                <textarea id="question" name="question" 
-                    style="height:200px" 
-                    placeholder="Bạn muốn được tư vấn về chủ đề gì?">
-                </textarea>
-                <input type="submit" value="Đăng ký">
-            </form>
-        </div>
-    </div>   
-
-    <div class="footer">Footer</div>
 </body>
+
 </html>
